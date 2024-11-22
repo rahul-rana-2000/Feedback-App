@@ -16,7 +16,7 @@ function App() {
 <Header />
 <div className='container'>
   <Routes>
- <Route exact path='/feedback-app'
+ <Route exact path='/'
  element={
     <>
   <FeedbackForm />
