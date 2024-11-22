@@ -3,7 +3,7 @@ import Header from './components/Header'
 import FeedbackList from './components/FeedbackList'
 import FeedbackStats from './components/FeedbackStats'
 import FeedbackForm from './components/FeedbackForm'
-import { BrowserRouter, Route, Routes, NavLink } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes, NavLink } from 'react-router-dom'
 import AboutPage from './Pages/AboutPage'
 import AboutIconLink from './components/AboutIconLink'
 import Card from './components/shared/Card'
@@ -12,7 +12,7 @@ function App() {
 
   return (
     <FeedbackProvider>
-<BrowserRouter>
+<Router>
 <Header />
 <div className='container'>
   <Routes>
@@ -40,7 +40,7 @@ function App() {
 </Card>
 <AboutIconLink />
 </div>
-    </BrowserRouter>
+    </Router>
     </FeedbackProvider>
   )
   }
